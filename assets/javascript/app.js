@@ -40,7 +40,6 @@ $(document).ready(function() {
       destination: destination,
       arrival: arrival,
       rate: rate,
-    //  minutesAway: tMinutesTillTrain
     minutesAway: firebase.database.ServerValue.TIMESTAMP
     });
 
@@ -53,7 +52,7 @@ $(document).ready(function() {
   })
 
   database.ref().on("child_added", function(childSnapshot) {
-    //console log the values received from firebase
+    //console log the values thats received from firebase
     console.log(childSnapshot.val().name)
     console.log(childSnapshot.val().destination)
     console.log(childSnapshot.val().arrival)
@@ -64,5 +63,4 @@ $(document).ready(function() {
     $('.table > tbody').append('<tr><td>' + childSnapshot.val().name + '</td><td>' + childSnapshot.val().destination + '</td><td>' + childSnapshot.val().rate + '</td><td>' + childSnapshot.val().arrival + '</td><td>' + childSnapshot.val().minutesAway + '</td></tr>');
   });
 
-  //document ready function closer
 });
