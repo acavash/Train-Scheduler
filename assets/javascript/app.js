@@ -40,7 +40,7 @@ $(document).ready(function() {
       destination: destination,
       arrival: arrival,
       rate: rate,
-      minutesAway: tMinutesTillTrain //firebase.database.ServerValue.TIMESTAMP
+      minutesAway:firebase.database.ServerValue.TIMESTAMP
     });
 
     //Reset input fields
