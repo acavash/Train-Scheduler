@@ -1,0 +1,59 @@
+body {
+	color: black;
+	background-color: #669999;
+	font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+}
+#table {
+	font-size: 22px;
+}
+
+#top {
+	font-size: 30px;
+	font-weigt: bold;
+	text-align: center;
+	background-color: #c2c2d6;
+
+}
+#label-text {
+	font-size: 22px;
+	margin: auto;
+}
+.rating {
+	font-size: 15px;
+	font-weight: bold;
+}
+.animals {
+	display: inline-block;
+	margin: 20px;
+}
+#addAnimal {
+	font-size: 18px;
+}
+#animal-form {
+	margin: 10px;
+}
+button {
+	font-size: 18px;
+	width: 15%;
+	margin: 10px;
+}
+.numberbox {
+	background-color: #47476b;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.images {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#totalscore {
+	background-color: #7a7a52;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#randomNumber {
+	font-size: 30px;
+}
+#addAnimal {
+	margin-bottom: 10px;
+}

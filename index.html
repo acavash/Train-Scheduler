@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- CSS Style -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.13.0/moment.min.js"></script>
+    <title>Train</title>
+</head>
+
+<body>
+    <div class="container">
+    <div id="table">
+        <div class="card">
+            <!-- Default panel contents -->
+                <div class="card-header">
+                    <h2>Current Train Schedule</h2>
+                </div>
+
+    <!-- Table -->
+    <table class="table table-inverse">
+        <thead>
+            <tr>
+            <th>Train Name</th>
+            <th>Destination</th>
+            <th>Frequency (min)</th>
+            <th>Next Arrival</th>
+            <th>Minutes Away</th>
+            </tr>
+        </thead>
+            <tr>
+            <td id="name"></td>
+            <td id ="role"></td>
+            <td id = "rate"></td>
+            <td id = "date"></td>
+            <td id = "away"></td>
+            </tr>
+    </table>
+</div>
+</div>
+
+<div class="card">
+    <div class="card-block">
+        <h2>Add Train</h2>
+    </div>
+<hr>
+    <form id="animal-form" name="animal-form">
+        Train Name<br>
+        <input class="form-control" id="name-input" type="text">
+        Destination<br>
+        <input class="form-control" id="role-input" type="text">
+        Frequency (min)<br>
+        <input class="form-control" id="rate-input" type="text">
+        First Train Time<br>
+        <input class="form-control" id="date-input" type="text">
+        <hr>
+        <button id="submit-button">Submit</button>
+    </form>
+</div>
+</div>
+</body>
+    <script src="assets/javascript/app.js"></script>
+</html>
